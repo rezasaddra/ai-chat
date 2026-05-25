@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Chatbot</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ddd;
+    }
+
+    #chatBox {
+      height: 400px;
+      overflow-y: auto;
+      border: 1px solid #eee;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .msg {
+      margin: 10px 0;
+    }
+
+    .user {
+      text-align: right;
+      color: blue;
+    }
+
+    .ai {
+      text-align: left;
+      color: green;
+    }
+
+    input {
+      width: 80%;
+      padding: 10px;
+    }
+
+    button {
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h2>AI Chatbot 🤖</h2>
+
+  <div id="chatBox"></div>
+
+  <input id="input" placeholder="Type message..." />
+  <button onclick="send()">Send</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
